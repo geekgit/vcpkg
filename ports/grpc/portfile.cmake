@@ -15,11 +15,6 @@ vcpkg_from_github(
     REF v1.10.1
     SHA512 2221d902c60eada6dd1547a63d26bd3b30cb6710247b5e48523bacde498a3691cc177f1dbe9db8a007b8ae341a5b0c8ec999539e26a9bcff480a8d0b02140997
     HEAD_REF master
-)
-
-# Issue: https://github.com/grpc/grpc/issues/10759
-vcpkg_apply_patches(
-    SOURCE_PATH ${SOURCE_PATH}
     PATCHES
         ${CMAKE_CURRENT_LIST_DIR}/disable-csharp-ext.patch
         ${CMAKE_CURRENT_LIST_DIR}/disable-csharp-ext-2.patch
