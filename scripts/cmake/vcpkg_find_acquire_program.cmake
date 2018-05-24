@@ -51,7 +51,7 @@ function(vcpkg_find_acquire_program VAR)
     set(PATHS ${DOWNLOADS}/tools/perl/perl/bin)
     set(BREW_PACKAGE_NAME "perl")
     set(APT_PACKAGE_NAME "perl")
-    set(URL "http://strawberryperl.com/download/5.24.1.1/strawberry-perl-5.24.1.1-32bit-portable.zip")
+    set(URL "https://mirror.local/mirror/strawberry-perl-5.24.1.1-32bit-portable.zip")
     set(ARCHIVE "strawberry-perl-5.24.1.1-32bit-portable.zip")
     set(HASH a6e685ea24376f50db5f06c5b46075f1d3be25168fa1f27fa9b02e2ac017826cee62a2b43562f9b6c989337a231ba914416c110075457764de2d11f99d5e0f26)
   elseif(VAR MATCHES "NASM")
@@ -60,8 +60,8 @@ function(vcpkg_find_acquire_program VAR)
     set(BREW_PACKAGE_NAME "nasm")
     set(APT_PACKAGE_NAME "nasm")
     set(URL
-      "http://www.nasm.us/pub/nasm/releasebuilds/2.12.02/win32/nasm-2.12.02-win32.zip"
-      "http://mirrors.kodi.tv/build-deps/win32/nasm-2.12.02-win32.zip"
+      "https://mirror.local/mirror/nasm-2.12.02-win32.zip"
+      "https://mirror.local/mirror/nasm-2.12.02-win32.zip"
     )
     set(ARCHIVE "nasm-2.12.02-win32.zip")
     set(HASH df7aaba094e17832688c88993997612a2e2c96cc3dc14ca3e8347b44c7762115f5a7fc6d7f20be402553aaa4c9e43ddfcf6228f581cfe89289bae550de151b36)
@@ -97,7 +97,7 @@ function(vcpkg_find_acquire_program VAR)
     set(PROGNAME jom)
     set(SUBDIR "jom-1.1.2")
     set(PATHS ${DOWNLOADS}/tools/jom/${SUBDIR})
-    set(URL "http://download.qt.io/official_releases/jom/jom_1_1_2.zip")
+    set(URL "https://mirror.local/mirror/jom_1_1_2.zip")
     set(ARCHIVE "jom_1_1_2.zip")
     set(HASH 830cd94ed6518fbe4604a0f5a3322671b4674b87d25a71349c745500d38e85c0fac4f6995242fc5521eb048e3966bb5ec2a96a06b041343ed8da9bba78124f34)
   elseif(VAR MATCHES "7Z")
